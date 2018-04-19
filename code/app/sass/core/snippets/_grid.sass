@@ -1,0 +1,68 @@
+@if $_use_grid == true
+
+	.-ol-row,
+	.-ol-row-float,
+	.-ol-row-inline,
+	.-ol-row-table
+		margin-left: -$p_horiz-col
+		margin-right: -$p_horiz-col
+
+		+md-tablet
+			margin-left: -$p_horiz-col_tb
+			margin-right: -$p_horiz-col_tb
+
+	.-ol-row
+		position: relative
+
+		display: flex
+		flex-wrap: wrap
+
+	.-ol-row-inline
+		position: relative
+
+		+inline( $item: '> .-ol-col', $ind-item: true )
+
+	.-ol-row-table
+		position: relative
+
+		+cell( $item: '> .-ol-col_table', $w: calc( 100% '+' $p_horiz-col * 2 ) )
+
+		+md-tablet
+
+	.-ol-row-float
+		position: relative
+
+		&::before,
+		&::after
+			content: ""
+			display: table
+
+		&::after
+			clear: both
+
+		> [class*='-ol-col']
+			float: left
+
+	.-ol-row_without_inside_space
+		margin: 0
+
+	+col
+
+	.-ol-gap-remover
+		margin-left: -$p_horiz-col
+		margin-right: -$p_horiz-col
+
+		+md-tablet
+			margin: 0
+
+	.-ol-gap-remover-tb
+
+		+md-tablet
+			margin-left: -$p_horiz-col_tb
+			margin-right: -$p_horiz-col_tb
+
+	.-ol-gap-remover-mb
+
+		+md-mobile
+			margin-left: -$p_horiz-col_tb
+			margin-right: -$p_horiz-col_tb
