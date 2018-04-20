@@ -55,9 +55,17 @@
 		display: none
 		padding: 40px 65px
 
+		+md-tablet
+			padding: 30px 45px
+
+	&__item_last &__content
+		padding-bottom: 0
+
 	&__content-btn-line
 		display: flex
 		align-items: center
+		flex-wrap: wrap
+
 		margin: -20px ( -$p_horiz-content-btn-line/2 ) 0
 
 	&__content-btn-line-item
