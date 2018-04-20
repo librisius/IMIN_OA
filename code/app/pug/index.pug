@@ -48,7 +48,7 @@ html(lang="en")
 								.b-hero__img
 									.b-hero__img-logo
 
-					button.b-hero__btn-video( data-text="Watch video" )
+					button.b-hero__btn-video.c-modal__bind( data-text="Watch video" data-c-modal-number="1" )
 
 				.b-steps.c-accordion( data-c-accordion-class="b-steps__item_active" )
 
@@ -135,10 +135,21 @@ html(lang="en")
 
 								.b-footer__stewarded-by-item.b-footer__stewarded-by-item_last
 									a.b-footer__stewarded-by-logo.b-footer__stewarded-by-logo_sport_england( href="#!" )
+		
+
+
+		include includes/b-box-video----presenting--1
+
 
 
 		script(
-			src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" )
+			src="dist/js/lib/jquery.min.js" )
+
+		//- script
+		//- 	include YTapi.js
+
+		script(
+			src="dist/js/plugin/modal.js" )
 
 		script(
 			src="dist/js/specific/app.js" )

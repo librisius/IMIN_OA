@@ -17,6 +17,9 @@
 	+md-retina
 		background-image: url('#{$img}/b-hero/bg@2x.jpg')
 
+	+md-tablet
+		margin-bottom: 80px
+
 	&__content
 		max-width: 635px
 		margin-left: -120px
@@ -122,6 +125,10 @@
 
 		@extend .i-play
 
+		+md-tablet
+			width: 100px
+			height: 100px
+
 		&:hover
 			box-shadow: 0 20px 60px rgba( $b_sh_c, .1 ), inset 0 5px 15px rgba( $b_sh_c, 0 )
 
@@ -133,6 +140,9 @@
 			font-size: 22px
 
 			+center-tsf( $x: calc( 50% + 1px ) )
+
+			+md-tablet
+				font-size: 20px
 
 		&::before
 			content: attr( data-text )

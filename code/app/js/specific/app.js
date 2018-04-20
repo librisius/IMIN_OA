@@ -13,7 +13,7 @@
 						$bind				= $this.find( '.c-accordion__bind' ),
 						className			= $(this).data( 'c-accordion-class' );
 
-					classActive( $item.eq(2) );
+					classActive( $item.eq(0) );
 
 					$bind.click( function( event ) {
 
@@ -34,13 +34,12 @@
 				});
 			}
 		})();
-	});
-
-	$(window).load(function() {
 
 		(function() {
 
-			if ( $('.c-block').length ) {
+			if ( $('.c-modal').length ) {
+
+				$('.c-modal').modal();
 			}
 		})();
 	});

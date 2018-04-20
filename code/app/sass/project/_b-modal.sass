@@ -1,0 +1,29 @@
+.b-modal
+
+	&__overlay
+
+	&__inner
+
+	&__box-wrapper
+		padding: 40px
+		overflow: hidden // to fix Edge scroll which appears due to &__overlay
+
+	&_md &__box-wrapper
+		position: relative
+
+		+md-tablet
+			padding: 80px $m-col_tb
+
+		+md-mobile
+			padding: 40px $m-col_tb/2
+
+	&_lg &__box-wrapper
+		position: relative
+
+		+md-tablet
+			padding: 80px $m-col_tb
+
+		+md-mobile
+			padding: 40px $m-col_tb/2
+
+	&__close

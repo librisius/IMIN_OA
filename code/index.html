@@ -75,7 +75,7 @@ hr {
               </div>
             </div>
           </div>
-          <button class="b-hero__btn-video" data-text="Watch video"></button>
+          <button class="b-hero__btn-video c-modal__bind" data-text="Watch video" data-c-modal-number="1"></button>
         </div>
         <div class="b-steps c-accordion" data-c-accordion-class="b-steps__item_active">
           <div class="-ol-container">
@@ -165,7 +165,21 @@ hr {
         </div>
       </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="b-modal c-modal" data-c-modal-number="1">
+      <div class="c-modal__inner">
+        <div class="b-modal__box-wrapper c-modal__box-wrapper c-modal__box-wrapper_middle_mb">
+          <div class="c-modal__overlay c-modal__close c-video-player__pause" data-c-video-player-number="1"></div>
+          <div class="b-box-video c-modal__box">
+            <div class="b-box-video__cross c-modal__close c-video-player__pause" data-c-video-player-number="1"></div>
+            <div class="b-box-video__video">
+              <iframe class="b-box-video__video-iframe" id="c-player" src="https://www.youtube.com/embed/chizr_7kRfk?&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dist/js/lib/jquery.min.js"></script>
+    <script src="dist/js/plugin/modal.js"></script>
     <script src="dist/js/specific/app.js"></script>
   </body>
 </html>

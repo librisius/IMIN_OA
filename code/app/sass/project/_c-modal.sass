@@ -1,0 +1,77 @@
+.c-modal
+
+	// BEGIN: to hide the block before init
+	position: fixed
+	top: -100%
+	left: -100%
+	z-index: $z_i-c-modal
+
+	opacity: 0
+	visibility: hidden
+
+	width: 100%
+	height: 100%
+
+	overflow-x: hidden
+	overflow-y: auto
+
+	transition-duration: .5s
+	transition-property: all, opacity
+	transition-timing-function: step-end, ease-out
+
+	// for iOS smooth scroll and
+	// and to switch on touch scroll when focusing on inputs
+	// more info: http://stackoverflow.com/questions/25596960/issues-with-touch-scroll-on-ios-when-focusing-inputs
+	-webkit-overflow-scrolling: touch
+
+	&_active
+		visibility: visible
+		top: 0
+		left: 0
+
+		opacity: 1
+
+		transition-timing-function: step-start, ease-out
+
+	&__overlay
+		position: absolute
+		left: 0
+		top: 0
+
+		width: 100%
+		height: 100%
+
+		background-color: $bg_c-overlay
+
+		cursor: pointer
+
+	&__close
+		cursor: pointer
+
+	&__inner
+		position: relative
+		display: table
+		table-layout: fixed
+
+		width: 100%
+		height: 100%
+
+	&__box-wrapper
+		display: table-cell
+		vertical-align: middle
+
+		+md-mobile
+			vertical-align: top
+
+		&_top
+			vertical-align: top
+
+		&_middle_mb
+
+			+md-mobile
+				vertical-align: middle
+
+	&__box
+		position: relative
+		z-index: 1
+		margin: 0 auto
