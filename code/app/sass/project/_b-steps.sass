@@ -1,4 +1,6 @@
 .b-steps
+	$p_horiz-content-btn-line: 40px
+
 	padding: 80px 0
 
 	&__item
@@ -33,7 +35,7 @@
 	&__heading-text
 		margin: -9px 0 -10px
 
-		color: $black
+		color: rgba( $black, .3 )
 		font-size: $font-size-xl
 		font-weight: 700
 		line-height: 1.5
@@ -41,15 +43,27 @@
 
 		text-transform: uppercase
 
+		+text-ellipsis
+
 		&_number
 			margin-right: 20px
 
 	&__item_active &__heading-text
-		color: rgba( $black, .3 )
+		color: $black
 
 	&__content
 		display: none
 		padding: 40px 65px
+
+	&__content-btn-line
+		display: flex
+		align-items: center
+		margin: -20px ( -$p_horiz-content-btn-line/2 ) 0
+
+	&__content-btn-line-item
+		display: flex
+		align-items: center
+		padding: 20px $p_horiz-content-btn-line/2
 
 	&__item_active &__content
 		display: block

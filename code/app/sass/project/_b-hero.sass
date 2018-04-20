@@ -92,11 +92,19 @@
 		border-radius: 50%
 
 		background-color: $white
-		box-shadow: 0 20px 40px rgba( $b_sh_c, .07 )
+		box-shadow: 0 20px 40px rgba( $b_sh_c, .07 ), inset 0 5px 15px rgba( $b_sh_c, 0 )
+
+		transition: box-shadow .2s
 
 		+center-tsf( $y: 100% )
 
 		@extend .i-play
+
+		&:hover
+			box-shadow: 0 20px 60px rgba( $b_sh_c, .1 ), inset 0 5px 15px rgba( $b_sh_c, 0 )
+
+		&:active
+			box-shadow: 0 20px 60px rgba( $b_sh_c, 0 ), inset 5px -10px 20px rgba( $b_sh_c, .07 )
 
 		&::after
 			color: $brand-primary

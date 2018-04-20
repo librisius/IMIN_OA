@@ -77,35 +77,70 @@ hr {
           </div>
           <button class="b-hero__btn-video" data-text="Watch video"></button>
         </div>
-        <div class="b-steps">
+        <div class="b-steps c-accordion" data-c-accordion-class="b-steps__item_active">
           <div class="-ol-container">
             <div class="-ol-row -ol-row_lg">
               <div class="-ol-col-12 -ol-col_lg">
-                <div class="b-steps__item b-steps__item_active">
-                  <div class="b-steps__heading">
+                <div class="b-steps__item _cur_p c-accordion__item">
+                  <div class="b-steps__heading c-accordion__bind">
                     <div class="b-steps__heading-text"><span class="b-steps__heading-text_number _letter_spacing_inherit">1</span> Login</div>
                   </div>
                   <div class="b-steps__content">
                     <button class="-ol-btn -ol-btn_min_w_mdl">Login</button>
                   </div>
                 </div>
-                <div class="b-steps__item">
-                  <div class="b-steps__heading">
+                <div class="b-steps__item _cur_p c-accordion__item">
+                  <div class="b-steps__heading c-accordion__bind">
                     <div class="b-steps__heading-text"><span class="b-steps__heading-text_number _letter_spacing_inherit">2</span> Preview</div>
                   </div>
                   <div class="b-steps__content">
-                    <button class="-ol-btn -ol-btn_min_w_mdl">Preview</button>
-                    <p>I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. Personal data guidance</p>
-                    <p>I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.</p>
+                    <div class="-ol-row-input -ol-row-input_xl">
+                      <button class="-ol-btn -ol-btn_min_w_mdl">Preview</button>
+                    </div>
+                    <div class="-ol-row-input -ol-row-input_xl">
+                      <label class="b-form-controller-line">
+                        <div class="b-form-controller-line__item">
+                          <div class="-ol-checkbox">
+                            <input class="-ol-checkbox__input" type="checkbox" id="preview1">
+                            <div class="-ol-checkbox__trigger"></div>
+                          </div>
+                        </div>
+                        <div class="b-form-controller-line__item b-form-controller-line__item_text">
+                          <p class="b-form-controller-line__text">I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. <a class="-ol-link _letter_spacing_inherit">Personal data guidance</a></p>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="-ol-row-input -ol-row-input_xl -ol-row-input_last">
+                      <label class="b-form-controller-line">
+                        <div class="b-form-controller-line__item">
+                          <div class="-ol-checkbox">
+                            <input class="-ol-checkbox__input" type="checkbox" id="preview1">
+                            <div class="-ol-checkbox__trigger"></div>
+                          </div>
+                        </div>
+                        <div class="b-form-controller-line__item b-form-controller-line__item_text">
+                          <p class="b-form-controller-line__text">I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.</p>
+                        </div>
+                      </label>
+                    </div>
                   </div>
                 </div>
-                <div class="b-steps__item b-steps__item_last">
-                  <div class="b-steps__heading">
+                <div class="b-steps__item b-steps__item_last _cur_p c-accordion__item">
+                  <div class="b-steps__heading c-accordion__bind">
                     <div class="b-steps__heading-text"><span class="b-steps__heading-text_number _letter_spacing_inherit">3</span> Publish</div>
                   </div>
                   <div class="b-steps__content">
-                    <button class="-ol-btn -ol-btn_min_w_lg">Setup Payment</button>
-                    <p>Your data is <b>open</b> for anyone to access, use and share and <b>bookable</b> via imin. You just need to setup payment.</p>
+                    <div class="b-steps__content-btn-line">
+                      <div class="b-steps__content-btn-line-item">
+                        <button class="-ol-btn -ol-btn_min_w_lg">Setup Payment</button>
+                      </div>
+                      <div class="b-steps__content-btn-line-item">
+                        <div class="b-note">
+                          <div class="b-note__icon"></div>
+                          <p class="b-note__text">Your data is <b class="b-note__text_bold _letter_spacing_inherit">open</b> for anyone to access, use and share and <b class="b-note__text_bold _letter_spacing_inherit">bookable</b> via imin. You just need to setup payment.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -122,12 +157,8 @@ hr {
                 <div class="b-footer__stewarded-by-item b-footer__stewarded-by-item_text">
                   <p class="b-footer__text">OpenActive is stewarded by:</p>
                 </div>
-                <div class="b-footer__stewarded-by-item">
-                  <div class="b-footer__stewarded-by-logo b-footer__stewarded-by-logo_odi"></div>
-                </div>
-                <div class="b-footer__stewarded-by-item b-footer__stewarded-by-item_last">
-                  <div class="b-footer__stewarded-by-logo b-footer__stewarded-by-logo_sport_england"></div>
-                </div>
+                <div class="b-footer__stewarded-by-item"><a class="b-footer__stewarded-by-logo b-footer__stewarded-by-logo_odi" href="#!"></a></div>
+                <div class="b-footer__stewarded-by-item b-footer__stewarded-by-item_last"><a class="b-footer__stewarded-by-logo b-footer__stewarded-by-logo_sport_england" href="#!"></a></div>
               </div>
             </div>
           </div>

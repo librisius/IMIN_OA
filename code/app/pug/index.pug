@@ -48,33 +48,70 @@ html(lang="en")
 
 					button.b-hero__btn-video( data-text="Watch video" )
 
-				.b-steps
+				.b-steps.c-accordion( data-c-accordion-class="b-steps__item_active" )
 
 					.-ol-container
 
 						.-ol-row.-ol-row_lg
 							.-ol-col-12.-ol-col_lg
 
-								.b-steps__item.b-steps__item_active
-									.b-steps__heading
+								.b-steps__item._cur_p.c-accordion__item
+
+									.b-steps__heading.c-accordion__bind
 										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 1] Login
+
 									.b-steps__content
 										button.-ol-btn.-ol-btn_min_w_mdl Login
 
-								.b-steps__item
-									.b-steps__heading
-										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 2] Preview
-									.b-steps__content
-										button.-ol-btn.-ol-btn_min_w_mdl Preview
-										p I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. Personal data guidance
-										p I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.
+								.b-steps__item._cur_p.c-accordion__item
 
-								.b-steps__item.b-steps__item_last
-									.b-steps__heading
-										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 3] Publish
+									.b-steps__heading.c-accordion__bind
+										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 2] Preview
+
 									.b-steps__content
-										button.-ol-btn.-ol-btn_min_w_lg Setup Payment
-										p Your data is #[b open] for anyone to access, use and share and #[b bookable] via imin. You just need to setup payment.
+
+										.-ol-row-input.-ol-row-input_xl
+											button.-ol-btn.-ol-btn_min_w_mdl Preview
+
+										.-ol-row-input.-ol-row-input_xl
+											label.b-form-controller-line
+												.b-form-controller-line__item
+
+													.-ol-checkbox
+														input.-ol-checkbox__input( type="checkbox" id="preview1" )
+														.-ol-checkbox__trigger
+
+												.b-form-controller-line__item.b-form-controller-line__item_text
+
+													p.b-form-controller-line__text I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. #[a.-ol-link._letter_spacing_inherit Personal data guidance]
+
+										.-ol-row-input.-ol-row-input_xl.-ol-row-input_last
+											label.b-form-controller-line
+												.b-form-controller-line__item
+
+													.-ol-checkbox
+														input.-ol-checkbox__input( type="checkbox" id="preview1" )
+														.-ol-checkbox__trigger
+
+												.b-form-controller-line__item.b-form-controller-line__item_text
+
+													p.b-form-controller-line__text I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.
+
+								.b-steps__item.b-steps__item_last._cur_p.c-accordion__item
+
+									.b-steps__heading.c-accordion__bind
+										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 3] Publish
+
+									.b-steps__content
+
+										.b-steps__content-btn-line
+											.b-steps__content-btn-line-item
+												button.-ol-btn.-ol-btn_min_w_lg Setup Payment
+
+											.b-steps__content-btn-line-item
+												.b-note
+													.b-note__icon
+													p.b-note__text Your data is #[b.b-note__text_bold._letter_spacing_inherit open] for anyone to access, use and share and #[b.b-note__text_bold._letter_spacing_inherit bookable] via imin. You just need to setup payment.
 
 			.l-content-wrapper__item.l-content-wrapper__item_shrink_none
 
@@ -92,10 +129,10 @@ html(lang="en")
 									p.b-footer__text OpenActive is stewarded by:
 
 								.b-footer__stewarded-by-item
-									.b-footer__stewarded-by-logo.b-footer__stewarded-by-logo_odi
+									a.b-footer__stewarded-by-logo.b-footer__stewarded-by-logo_odi( href="#!" )
 
 								.b-footer__stewarded-by-item.b-footer__stewarded-by-item_last
-									.b-footer__stewarded-by-logo.b-footer__stewarded-by-logo_sport_england
+									a.b-footer__stewarded-by-logo.b-footer__stewarded-by-logo_sport_england( href="#!" )
 
 
 		script(

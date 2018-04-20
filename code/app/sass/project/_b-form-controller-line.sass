@@ -1,0 +1,36 @@
+.b-form-controller-line // label
+	display: flex
+	margin: ( -$p_vert-b-form-controller-line__item ) 0 0 ( -$p_horiz-b-form-controller-line__item )
+
+	+md-tablet
+		margin: ( -$p_vert-b-form-controller-line__item_tb ) 0 0 ( -$p_horiz-b-form-controller-line__item_tb )
+
+	&_wrap
+		flex-wrap: wrap
+
+	&__item
+		margin: $p_vert-b-form-controller-line__item 0 0 $p_horiz-b-form-controller-line__item
+
+		+md-tablet
+			margin: $p_vert-b-form-controller-line__item_tb 0 0 $p_horiz-b-form-controller-line__item_tb
+
+		&_major
+			flex-grow: 1
+
+		&_text
+			position: relative // for error
+			padding-top: 2px
+
+	&__text
+		display: block
+
+		vertical-align: baseline
+
+		margin-top: -9px
+		margin-bottom: -9px
+
+		color: $black // to set default label style
+		font-size: $font-size-xm
+		line-height: 3.2rem
+		font-weight: 400 // to set default label style
+		letter-spacing: .04em

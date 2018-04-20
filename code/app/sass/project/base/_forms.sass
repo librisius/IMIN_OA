@@ -52,6 +52,91 @@
 
 		cursor: pointer
 
+.-ol-checkbox
+	position: relative
+
+	width: $w-checkbox
+	height: $h-checkbox
+
+	&__input
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+
+		opacity: 0
+		overflow: hidden
+
+		width: 100%
+		height: 100%
+
+	&__trigger
+		position: absolute
+		top: 0
+		left: 0
+
+		width: 100%
+		height: 100%
+
+		border: $brd_w-checkbox solid $brd_c-checkbox
+		border-radius: $brd_rd-checkbox
+
+		background-color: $bg-checkbox
+
+		cursor: pointer
+
+	&__input:checked ~ &__trigger
+		border: $brd_w-checkbox_checked solid $brd_c-checkbox_checked
+		background-color: $bg-checkbox_checked
+
+	&[disabled]
+		opacity: 0.55
+		cursor: default
+
+.-ol-radio
+	position: relative
+
+	width: $w-radio
+	height: $h-radio
+
+	&__input
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+
+		opacity: 0
+		overflow: hidden
+
+		width: 100%
+		height: 100%
+
+		&[disabled]
+			cursor: default
+
+	&__trigger
+		position: absolute
+		top: 0
+		left: 0
+
+		width: 100%
+		height: 100%
+
+		border: $brd_w-radio solid $brd_c-radio
+		border-radius: $brd_rd-radio
+
+		background-color: $bg-radio
+
+		cursor: pointer
+
+	&__input:checked ~ &__trigger
+		border: $brd_w-radio_checked solid $brd_c-radio_checked
+		background-color: $bg-radio_checked
+
+	&__input[disabled] ~ &__trigger
+		border-color: $grey-lighter
+		background-color: $grey-lighter
+
 .-ol-label-wrapper
 	display: block
 
@@ -90,8 +175,29 @@
 .-ol-row-input
 	margin-bottom: $m-row-input
 
+	&_xl
+		margin-bottom: $m-row-input_xl
+
+		+md-mobile
+			margin-bottom: $m-row-input_xl_mb
+
 	&_last
 		margin-bottom: 0
+
+.-ol-row-input-mb
+
+	+md-mobile
+		margin-bottom: $m-row-input-mb
+
+	&_xl
+
+		+md-mobile
+			margin-bottom: $m-row-input-mb_xl
+
+	&_last
+
+		+md-mobile
+			margin-bottom: 0
 
 .-ol-form-body
 	margin-bottom: $m-form-body

@@ -6,13 +6,13 @@ $grey-darker:					lighten($grey-base, 13.5%) // #222
 $grey-dark:						lighten($grey-base, 20%)   // #333
 $grey:							lighten($grey-base, 33.5%) // #555
 $grey-light:					lighten($grey-base, 67%) // #777
-$grey-lighter:					lighten($grey-base, 90%) // #eee
+$grey-lighter:					#cccccc // 80%
 $grey-lightest:					#f0f1f4 // 96%
 $white:							#fff
 
-$brand-primary:					#ed1968 // blue
+$brand-primary:					#ed1968 // pink
 $brand-success:					#58c067 // green
-$brand-info:					#69c1df // cyan
+$brand-info:					#1861f2 // blue
 $brand-warning:					#f5bf53 // yellow
 $brand-danger:					#ed6161 // red
 
@@ -49,9 +49,9 @@ $b_sh_c:						#110533
 /*----------- link -----------*/
 
 $c-link:							$brand-primary
-$brd_c-link:						transparent
-$c-link_hover:						darken($c-link, 10%)
-$brd_c-link_hover:					$c-link_hover
+$brd_c-link:						rgba( $c-link, .3 )
+$c-link_hover:						$brand-primary
+$brd_c-link_hover:					transparent
 
 /*----------- link (end) -----------*/
 
@@ -71,6 +71,16 @@ $c-input: 							$c-text-base
 $c-placeholder:						$grey-light
 
 $brd_c-form-error:					$c-form-error
+
+$bg-checkbox: 						$white
+$brd_c-checkbox: 					$brd_c
+$bg-checkbox_checked:				$white
+$brd_c-checkbox_checked:			$brand-primary
+
+$bg-radio: 							$white
+$brd_c-radio: 						$grey-lighter
+$bg-radio_checked:					$white
+$brd_c-radio_checked:				$brand-primary
 
 /*----------- form (end) -----------*/
 

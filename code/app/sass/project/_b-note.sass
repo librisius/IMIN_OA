@@ -1,0 +1,57 @@
+.b-note
+	$d-icon:	46px
+
+	position: relative // for &__icon
+
+	display: flex
+
+	max-width: 600px
+
+	padding-left: $d-icon + 20px
+
+	&__icon
+		position: absolute
+		top: -3px
+		left: 0
+
+		width: $d-icon
+		height: $d-icon
+
+		border-radius: 50%
+
+		background-color: rgba( $brand-info, .2 )
+
+		&::before,
+		&::after
+			$w:	2px
+
+			content: ''
+
+			position: absolute
+			left: ( $d-icon - $w )/2
+
+			width: $w
+
+			border-radius: $w/2
+
+			background-color: $brand-info
+
+		&::before
+			top: 13px
+			height: 2px
+
+		&::after
+			top: 18px
+			height: 15px
+	
+	&__text
+		margin: -7px 0 -9px
+
+		color: $black
+		font-size: 16px
+		line-height: 1.75
+		font-weight: 400
+		letter-spacing: .04em
+
+		&_bold
+			font-weight: 700
