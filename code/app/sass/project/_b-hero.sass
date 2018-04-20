@@ -1,17 +1,30 @@
 .b-hero
+	$p_horix-content-controls-item:	15px
+
+	position: relative // for &__btn-video
+
 	display: flex
 	align-items: center
 
 	height: 540px
 
-	background: $black
+	background: $black url('#{$img}/b-hero/bg.jpg') center / cover no-repeat
 
 	color: $white
 
+	+md-retina
+		background-image: url('#{$img}/b-hero/bg@2x.jpg')
+
 	&__content
 		width: 635px
+		margin-left: -120px
+
+	&__content-text-part
+		margin-bottom: 50px
 
 	&__heading
+		margin: -13px 0 27px
+
 		font-size: 4.8rem
 		line-height: 1.25
 		font-weight: 700
@@ -19,15 +32,91 @@
 
 		text-transform: uppercase
 
+		&_last
+			margin-bottom: -13px
+
 	&__paragraph
 		width: 490px
+
+		margin: -11px 0 -12px
 
 		font-size: $font-size-xm
 		line-height: 2
 		letter-spacing: .04em
 
 	&__content-controls
+		display: flex
+		align-items: center
+		flex-wrap: wrap
 
-	&__link-website
+		margin: 0 ( -$p_horix-content-controls-item )
+
+	&__content-controls-item
+		padding: 0 $p_horix-content-controls-item
+
+	&__link-website // tag a
+		position: relative
+
+		display: flex // to collapse margins inside
+
+		padding-left: 31px + 13px // 31px is .i-code width
+
+		@extend .i-code
+
+		&::after
+			position: absolute
+			top: -1px
+			left: 0
+
+			font-size: 15px
+
+	&__link-website-text // tag span
+		display: block
+
+		margin: -7px 0 -9px
+
+		color: $white
+		font-size: $font-size-mdl
+		line-height: 1.75
+		font-weight: 700
+		letter-spacing: .06em
 
 	&__btn-video
+		z-index: 9
+
+		width: 120px
+		height: 120px
+
+		border-radius: 50%
+
+		background-color: $white
+		box-shadow: 0 20px 40px rgba( $b_sh_c, .07 )
+
+		+center-tsf( $y: 100% )
+
+		&::after
+			content: ''
+
+		&::before
+			content: ''
+
+			position: absolute
+
+			color: $black
+			font-size: $font-size-xm
+			line-height: 1.5
+			font-weight: 700
+			letter-spacing: .06em
+
+	&__img
+		right: -120px
+
+		width: 610px
+		height: 160px
+
+		background: $black url('#{$img}/b-hero/connection.png') center / cover no-repeat
+
+		+center-tsf( $x: auto, $not: x )
+
+		+md-retina
+			background-image: url('#{$img}/b-hero/connection@2x.png')

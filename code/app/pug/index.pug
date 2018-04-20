@@ -9,64 +9,89 @@ html(lang="en")
 
 		.b-header
 
-			.-ol-container.-ol-container_full_w
+			.-ol-container.-ol-container_full_w.l-flex.l-flex_valign_center.l-flex_space_between._full_h
 
-				.b-header__item
+				.l-flex__item
 					.b-header__logo
 
-				.b-header__item
-					button.-ol-btn Login
+				.l-flex__item
+					button.-ol-btn.-ol-btn_min_w_mdl Login
 
-		.b-hero
+		.l-content-wrapper
 
-			.-ol-container._full_w
+			.l-content-wrapper__item.l-content-wrapper__item_major
 
-				.-ol-row.-ol-row_lg
-					.-ol-col-12.-ol-col_lg
+				.b-hero
 
-						.b-hero__content
-							h2.b-hero__heading Reach More Customers
-							p.b-hero__paragraph Teamup are part of OpenActive. If you use Teamup as your booking system you're a couple of clicks away from reaching way more customers
+					.-ol-container._full_w
 
-							.b-hero__content-controls
-								button.-ol-btn Get started
-								a.b-hero__link-website( href="#!" ) OpenActive Website
+						.-ol-row.-ol-row_lg
+							.-ol-col-12.-ol-col_lg._bind
 
-						button.b-hero__btn-video Watch video
+								.b-hero__content
 
-		.b-steps
+									.b-hero__content-text-part
+										h2.b-hero__heading Reach More Customers
+										p.b-hero__paragraph Teamup are part of OpenActive. If you use Teamup as your booking system you're a couple of clicks away from reaching way more customers
 
-			.-ol-container
+									.b-hero__content-controls
 
-				.-ol-row.-ol-row_lg
-					.-ol-col-12.-ol-col_lg
+										.b-hero__content-controls-item
+											button.-ol-btn.-ol-btn_min_w_lg Get started
 
-						.b-steps__item
-							.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 1] Login
-							.b-steps__content
-								button.-ol-btn Login
+										.b-hero__content-controls-item
+											a.b-hero__link-website( href="#!" )
+												span.b-hero__link-website-text OpenActive Website
 
-						.b-steps__item
-							.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 2] Preview
-							.b-steps__content
-								button.-ol-btn Preview
-								p I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. Personal data guidance
-								p I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.
+								.b-hero__img
 
-						.b-steps__item
-							.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 3] Publish
-							.b-steps__content
-								button.-ol-btn Setup Payment
-								p Your data is #[b open] for anyone to access, use and share and #[b bookable] via imin. You just need to setup payment.
+					button.b-hero__btn-video( data-text="Watch video" )
 
-		.b-footer
+				.b-steps
 
-			.-ol-container.-ol-container_full_w
+					.-ol-container
 
-				.b-footer__item
+						.-ol-row.-ol-row_lg
+							.-ol-col-12.-ol-col_lg
 
-				.b-footer__item
-					p OpenActive is stewarded by:
+								.b-steps__item
+									.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 1] Login
+									.b-steps__content
+										button.-ol-btn.-ol-btn_min_w_mdl Login
+
+								.b-steps__item
+									.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 2] Preview
+									.b-steps__content
+										button.-ol-btn.-ol-btn_min_w_mdl Preview
+										p I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. Personal data guidance
+										p I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.
+
+								.b-steps__item
+									.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 3] Publish
+									.b-steps__content
+										button.-ol-btn.-ol-btn_min_w_lg Setup Payment
+										p Your data is #[b open] for anyone to access, use and share and #[b bookable] via imin. You just need to setup payment.
+
+			.l-content-wrapper__item.l-content-wrapper__item_shrink_none
+
+				.b-footer
+
+					.-ol-container.-ol-container_full_w.l-flex.l-flex_valign_center.l-flex_space_between._full_h
+
+						.l-flex__item
+
+						.l-flex__item
+
+							.b-footer__stewarded-by
+
+								.b-footer__stewarded-by-item.b-footer__stewarded-by-item_text
+									p.b-footer__text OpenActive is stewarded by:
+
+								.b-footer__stewarded-by-item
+									.b-footer__stewarded-by-logo.b-footer__stewarded-by-logo_odi
+
+								.b-footer__stewarded-by-item.b-footer__stewarded-by-item_last
+									.b-footer__stewarded-by-logo.b-footer__stewarded-by-logo_sport_england
 
 
 		script(

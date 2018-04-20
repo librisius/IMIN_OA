@@ -42,65 +42,87 @@ hr {
   </style>
   <body>
     <div class="b-header">
-      <div class="-ol-container -ol-container_full_w">
-        <div class="b-header__item">
+      <div class="-ol-container -ol-container_full_w l-flex l-flex_valign_center l-flex_space_between _full_h">
+        <div class="l-flex__item">
           <div class="b-header__logo"></div>
         </div>
-        <div class="b-header__item">
-          <button class="-ol-btn">Login</button>
+        <div class="l-flex__item">
+          <button class="-ol-btn -ol-btn_min_w_mdl">Login</button>
         </div>
       </div>
     </div>
-    <div class="b-hero">
-      <div class="-ol-container _full_w">
-        <div class="-ol-row -ol-row_lg">
-          <div class="-ol-col-12 -ol-col_lg">
-            <div class="b-hero__content">
-              <h2 class="b-hero__heading">Reach More Customers</h2>
-              <p class="b-hero__paragraph">Teamup are part of OpenActive. If you use Teamup as your booking system you're a couple of clicks away from reaching way more customers</p>
-              <div class="b-hero__content-controls">
-                <button class="-ol-btn">Get started</button><a class="b-hero__link-website" href="#!">OpenActive Website</a>
-              </div>
-            </div>
-            <button class="b-hero__btn-video">Watch video</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="b-steps">
-      <div class="-ol-container">
-        <div class="-ol-row -ol-row_lg">
-          <div class="-ol-col-12 -ol-col_lg">
-            <div class="b-steps__item">
-              <div class="b-steps__heading"><span class="b-steps__heading_number _letter_spacing_inherit">1</span> Login</div>
-              <div class="b-steps__content">
-                <button class="-ol-btn">Login</button>
-              </div>
-            </div>
-            <div class="b-steps__item">
-              <div class="b-steps__heading"><span class="b-steps__heading_number _letter_spacing_inherit">2</span> Preview</div>
-              <div class="b-steps__content">
-                <button class="-ol-btn">Preview</button>
-                <p>I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. Personal data guidance</p>
-                <p>I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.</p>
-              </div>
-            </div>
-            <div class="b-steps__item">
-              <div class="b-steps__heading"><span class="b-steps__heading_number _letter_spacing_inherit">3</span> Publish</div>
-              <div class="b-steps__content">
-                <button class="-ol-btn">Setup Payment</button>
-                <p>Your data is <b>open</b> for anyone to access, use and share and <b>bookable</b> via imin. You just need to setup payment.</p>
+    <div class="l-content-wrapper">
+      <div class="l-content-wrapper__item l-content-wrapper__item_major">
+        <div class="b-hero">
+          <div class="-ol-container _full_w">
+            <div class="-ol-row -ol-row_lg">
+              <div class="-ol-col-12 -ol-col_lg _bind">
+                <div class="b-hero__content">
+                  <div class="b-hero__content-text-part">
+                    <h2 class="b-hero__heading">Reach More Customers</h2>
+                    <p class="b-hero__paragraph">Teamup are part of OpenActive. If you use Teamup as your booking system you're a couple of clicks away from reaching way more customers</p>
+                  </div>
+                  <div class="b-hero__content-controls">
+                    <div class="b-hero__content-controls-item">
+                      <button class="-ol-btn -ol-btn_min_w_lg">Get started</button>
+                    </div>
+                    <div class="b-hero__content-controls-item"><a class="b-hero__link-website" href="#!"><span class="b-hero__link-website-text">OpenActive Website</span></a></div>
+                  </div>
+                </div>
+                <div class="b-hero__img"></div>
               </div>
             </div>
           </div>
+          <button class="b-hero__btn-video" data-text="Watch video"></button>
+        </div>
+        <div class="b-steps">
+          <div class="-ol-container">
+            <div class="-ol-row -ol-row_lg">
+              <div class="-ol-col-12 -ol-col_lg">
+                <div class="b-steps__item">
+                  <div class="b-steps__heading"><span class="b-steps__heading_number _letter_spacing_inherit">1</span> Login</div>
+                  <div class="b-steps__content">
+                    <button class="-ol-btn -ol-btn_min_w_mdl">Login</button>
+                  </div>
+                </div>
+                <div class="b-steps__item">
+                  <div class="b-steps__heading"><span class="b-steps__heading_number _letter_spacing_inherit">2</span> Preview</div>
+                  <div class="b-steps__content">
+                    <button class="-ol-btn -ol-btn_min_w_mdl">Preview</button>
+                    <p>I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. Personal data guidance</p>
+                    <p>I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.</p>
+                  </div>
+                </div>
+                <div class="b-steps__item">
+                  <div class="b-steps__heading"><span class="b-steps__heading_number _letter_spacing_inherit">3</span> Publish</div>
+                  <div class="b-steps__content">
+                    <button class="-ol-btn -ol-btn_min_w_lg">Setup Payment</button>
+                    <p>Your data is <b>open</b> for anyone to access, use and share and <b>bookable</b> via imin. You just need to setup payment.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="b-footer">
-      <div class="-ol-container -ol-container_full_w">
-        <div class="b-footer__item"></div>
-        <div class="b-footer__item">
-          <p>OpenActive is stewarded by:</p>
+      <div class="l-content-wrapper__item l-content-wrapper__item_shrink_none">
+        <div class="b-footer">
+          <div class="-ol-container -ol-container_full_w l-flex l-flex_valign_center l-flex_space_between _full_h">
+            <div class="l-flex__item"></div>
+            <div class="l-flex__item">
+              <div class="b-footer__stewarded-by">
+                <div class="b-footer__stewarded-by-item b-footer__stewarded-by-item_text">
+                  <p class="b-footer__text">OpenActive is stewarded by:</p>
+                </div>
+                <div class="b-footer__stewarded-by-item">
+                  <div class="b-footer__stewarded-by-logo b-footer__stewarded-by-logo_odi"></div>
+                </div>
+                <div class="b-footer__stewarded-by-item b-footer__stewarded-by-item_last">
+                  <div class="b-footer__stewarded-by-logo b-footer__stewarded-by-logo_sport_england"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

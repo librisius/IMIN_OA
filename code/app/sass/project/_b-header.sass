@@ -1,6 +1,16 @@
 .b-header
-	height: 90px
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 99
 
-	&__item
+	width: 100%
+	height: $h-b-header
+
+	background-color: $white
+	box-shadow: 0 20px 40px rgba( $b_sh_c, .07 )
 
 	&__logo
+		width: 71px
+		height: 60px
+		background: transparent url( '#{$img}/companies/TeamUp.svg' ) 0 / contain no-repeat

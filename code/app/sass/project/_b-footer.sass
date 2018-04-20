@@ -3,4 +3,37 @@
 	background: $black
 	color: $white
 
-	&__item
+	&__text
+		margin: -8px 0 -9px
+
+		color: rgba( $white, .3 )
+		font-size: $font-size-xm
+		line-height: 3rem
+		letter-spacing: .04em
+
+	&__stewarded-by
+		display: flex
+		align-items: center
+
+	&__stewarded-by-item
+		margin-right: 20px
+
+		&_text
+			margin-right: 15px
+
+		&_last
+			margin-right: 0
+
+	&__stewarded-by-logo
+		opacity: .3
+		background: transparent  0 / contain no-repeat
+
+		&_odi
+			width: 55px
+			height: 23px
+			background-image: url( '#{$img}/b-footer/stewarded-by/ODI.svg' )
+
+		&_sport_england
+			width: 84px
+			height: 25px
+			background-image: url( '#{$img}/b-footer/stewarded-by/sport_england.svg' )
