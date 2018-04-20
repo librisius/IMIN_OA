@@ -44,6 +44,7 @@ html(lang="en")
 												span.b-hero__link-website-text OpenActive Website
 
 								.b-hero__img
+									.b-hero__img-logo
 
 					button.b-hero__btn-video( data-text="Watch video" )
 
@@ -54,20 +55,23 @@ html(lang="en")
 						.-ol-row.-ol-row_lg
 							.-ol-col-12.-ol-col_lg
 
-								.b-steps__item
-									.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 1] Login
+								.b-steps__item.b-steps__item_active
+									.b-steps__heading
+										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 1] Login
 									.b-steps__content
 										button.-ol-btn.-ol-btn_min_w_mdl Login
 
 								.b-steps__item
-									.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 2] Preview
+									.b-steps__heading
+										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 2] Preview
 									.b-steps__content
 										button.-ol-btn.-ol-btn_min_w_mdl Preview
 										p I have checked the preview for any personal data included in activity names or descriptions (e.g. instructor names, e-mail addresses or phone numbers), and I have consent to publish these. Personal data guidance
 										p I have checked the preview, and am happy that the title and description of each session is clear, and includes enough detail for a customer to understand what the session is about.
 
-								.b-steps__item
-									.b-steps__heading #[span.b-steps__heading_number._letter_spacing_inherit 3] Publish
+								.b-steps__item.b-steps__item_last
+									.b-steps__heading
+										.b-steps__heading-text #[span.b-steps__heading-text_number._letter_spacing_inherit 3] Publish
 									.b-steps__content
 										button.-ol-btn.-ol-btn_min_w_lg Setup Payment
 										p Your data is #[b open] for anyone to access, use and share and #[b bookable] via imin. You just need to setup payment.

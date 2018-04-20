@@ -8,6 +8,8 @@
 
 	height: 540px
 
+	margin-bottom: 91px
+
 	background: $black url('#{$img}/b-hero/bg.jpg') center / cover no-repeat
 
 	color: $white
@@ -94,19 +96,32 @@
 
 		+center-tsf( $y: 100% )
 
+		@extend .i-play
+
 		&::after
-			content: ''
+			color: $brand-primary
+			font-size: 22px
+
+			+center-tsf( $x: calc( 50% + 1px ) )
 
 		&::before
-			content: ''
+			content: attr( data-text )
 
 			position: absolute
+			top: calc( 100% + 17px )
+			left: 0
+
+			width: 100%
+
+			margin: -6px 0 -8px
 
 			color: $black
 			font-size: $font-size-xm
 			line-height: 1.5
 			font-weight: 700
 			letter-spacing: .06em
+
+			text-align: center
 
 	&__img
 		right: -120px
@@ -120,3 +135,10 @@
 
 		+md-retina
 			background-image: url('#{$img}/b-hero/connection@2x.png')
+
+	&__img-logo
+		width: 80px
+		height: 68px
+		background: transparent url( '#{$img}/companies/TeamUp.svg' ) 0 / contain no-repeat
+
+		+center-tsf( $x: calc( 100% - 96px ) )

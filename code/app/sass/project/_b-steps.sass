@@ -2,11 +2,36 @@
 	padding: 80px 0
 
 	&__item
+		margin-bottom: 15px
+
+		&_active
+
+		&_last
+			margin-bottom: 0
 
 	&__heading
-		padding: 24px 20px
+		$w:			35px
+		$p_vert:	24px
+		$p_horiz:	20px
 
+		position: relative // for &::before
+		padding: $p_vert $p_horiz $p_vert ( $p_horiz + $w )
 		background-color: $grey-lightest
+
+		&::before
+			content: ''
+
+			position: absolute
+			top: 0
+			left: 0
+
+			width: $w
+			height: 65px
+
+			background: transparent url( '#{$img}/b-steps/arrow.svg' ) 0 / contain no-repeat
+
+	&__heading-text
+		margin: -9px 0 -10px
 
 		color: $black
 		font-size: $font-size-xl
@@ -19,5 +44,12 @@
 		&_number
 			margin-right: 20px
 
+	&__item_active &__heading-text
+		color: rgba( $black, .3 )
+
 	&__content
+		display: none
 		padding: 40px 65px
+
+	&__item_active &__content
+		display: block
